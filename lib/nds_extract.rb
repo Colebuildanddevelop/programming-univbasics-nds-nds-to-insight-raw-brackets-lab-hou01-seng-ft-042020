@@ -37,7 +37,6 @@ def directors_totals(nds)
   # 
   
   director_leaderboard = {}
-  
   index = 0 
   while nds[index] do 
     director_hash = nds[index]
