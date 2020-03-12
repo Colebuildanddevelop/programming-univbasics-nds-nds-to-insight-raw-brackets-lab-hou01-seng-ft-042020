@@ -36,6 +36,22 @@ def directors_totals(nds)
   # ]
   # 
   
+  director_leaderboard = {}
   
-  nil
+  index = 0 
+  while nds[index] do 
+    director_hash = nds[index]
+    puts director_hash
+    director_name = director_hash[:name]
+    movie_index = 0 
+    total_gross = 0
+    while director_hash[:movies][movie_index] do 
+      movie_hash = director_hash[:movies][movie_index]
+      total_gross += movie_hash[:worldwide_gross]
+      movie_index += 1
+    end
+    director_leaderboard[director_name] = total_gross
+    index += 1 
+  end
+  director_leaderboard
 end
