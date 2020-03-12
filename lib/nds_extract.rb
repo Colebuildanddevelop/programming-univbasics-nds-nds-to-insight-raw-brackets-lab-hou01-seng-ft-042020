@@ -55,3 +55,5 @@ def directors_totals(nds)
   end
   director_leaderboard
 end
+
+puts directors
