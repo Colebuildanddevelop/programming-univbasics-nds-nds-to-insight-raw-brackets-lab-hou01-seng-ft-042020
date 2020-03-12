@@ -20,5 +20,22 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
+  
+  # [
+  #   {
+  #     :name => string,
+  #     :movies => [
+  #       {
+  #         :title => string,
+  #         :studio => string,
+  #         :worldwide_gross => int,
+  #         :release_year => int
+  #       }
+  #     ]
+  #   }
+  # ]
+  # 
+  
+  
   nil
 end
